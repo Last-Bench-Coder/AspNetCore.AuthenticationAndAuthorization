@@ -26,11 +26,15 @@
   
   ![image](https://user-images.githubusercontent.com/81896060/121781544-efab3180-cbc2-11eb-86b6-69292952afa3.png)
 
+## Nuget Package Work
+
 * Go to nuget package and add the below mentioned package
 
     **Microsoft.AspNetcore.Authentication**
 
 ![image](https://user-images.githubusercontent.com/81896060/121781581-0d789680-cbc3-11eb-9c96-77b2bad739e5.png)
+
+## Startup.cs
 
 * Go to Startup.cs add the below lines under **Configure()** method
  	     
@@ -50,4 +54,21 @@ Also add the below code in ConfigureServices(IServiceCollection services)
 
 ![image](https://user-images.githubusercontent.com/81896060/121782050-5cbfc680-cbc5-11eb-85f5-741855ed0b4b.png)
 
+## Controller Creation
 
+* Create a Controller **"AccountController.cs"** add then add action method **Login**
+
+```
+[HttpGet]
+public IActionResult Login()
+{
+    return View();
+}
+```
+* Create the view for same Login action method
+
+```
+
+```
+
+* 
