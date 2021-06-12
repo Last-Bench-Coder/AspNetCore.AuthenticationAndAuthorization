@@ -41,4 +41,13 @@
 
 ![image](https://user-images.githubusercontent.com/81896060/121781694-a9a29d80-cbc3-11eb-8c35-0e1b53609ce1.png)
 
+Also add the below code in ConfigureServices(IServiceCollection services)
+
+```
+ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).
+                AddCookie(o => o.LoginPath = new Microsoft.AspNetCore.Http.PathString("/account/login"));
+```
+
+![image](https://user-images.githubusercontent.com/81896060/121782050-5cbfc680-cbc5-11eb-85f5-741855ed0b4b.png)
+
 
